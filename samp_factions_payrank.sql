@@ -1,0 +1,64 @@
+CREATE DATABASE  IF NOT EXISTS `wparty_samp` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `wparty_samp`;
+-- MySQL dump 10.13  Distrib 5.5.16, for Win32 (x86)
+--
+-- Host: localhost    Database: wparty_samp
+-- ------------------------------------------------------
+-- Server version	5.5.23
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `samp_factions_payrank`
+--
+
+DROP TABLE IF EXISTS `samp_factions_payrank`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `samp_factions_payrank` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `FactionID` int(11) NOT NULL DEFAULT '255',
+  `Rank1` int(11) NOT NULL DEFAULT '0',
+  `Rank2` int(11) NOT NULL DEFAULT '0',
+  `Rank3` int(11) NOT NULL DEFAULT '0',
+  `Rank4` int(11) NOT NULL DEFAULT '0',
+  `Rank5` int(11) NOT NULL DEFAULT '0',
+  `Rank6` int(11) NOT NULL DEFAULT '0',
+  `Rank7` int(11) NOT NULL DEFAULT '0',
+  `Rank8` int(11) NOT NULL DEFAULT '0',
+  `Rank9` int(11) NOT NULL DEFAULT '0',
+  `Rank10` int(11) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`ID`),
+  KEY `FactionID` (`FactionID`)
+) ENGINE=MyISAM AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `samp_factions_payrank`
+--
+
+LOCK TABLES `samp_factions_payrank` WRITE;
+/*!40000 ALTER TABLE `samp_factions_payrank` DISABLE KEYS */;
+INSERT INTO `samp_factions_payrank` (`ID`, `FactionID`, `Rank1`, `Rank2`, `Rank3`, `Rank4`, `Rank5`, `Rank6`, `Rank7`, `Rank8`, `Rank9`, `Rank10`) VALUES (12,11,350,330,300,280,250,230,200,180,150,100),(11,10,350,350,350,350,350,350,350,350,350,10),(10,9,350,330,300,270,250,220,200,150,150,150),(9,8,0,0,0,0,0,0,0,0,0,0),(8,7,100,0,0,0,35,0,0,0,0,0),(7,6,350,200,100,80,20,10,10,10,10,10),(6,5,10,10,10,10,10,10,10,10,10,10),(5,4,350,0,0,0,0,0,0,0,0,0),(4,3,349,349,250,200,200,200,200,199,170,150),(3,2,350,150,130,120,100,100,60,0,0,0),(2,1,10,10,10,10,10,10,10,10,10,10),(1,0,350,350,330,320,300,100,125,300,250,0),(13,12,0,0,0,0,0,0,0,0,0,0);
+/*!40000 ALTER TABLE `samp_factions_payrank` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2013-06-09 15:05:06
